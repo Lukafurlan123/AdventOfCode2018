@@ -3,9 +3,7 @@ package com.lukafurlan.adventofcode2018;
 import com.lukafurlan.adventofcode2018.helpers.FileReadHelper;
 
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
 
 /**
  * @author Luka Furlan <luka.furlan9@gmail.com>
@@ -22,16 +20,7 @@ public class Day1 {
     }
 
     private static int getFrequency() {
-
-        int total = 0;
-
-        for(String frequency : frequencies) {
-            int freq = Integer.parseInt(frequency);
-            total += freq;
-        }
-
-        return total;
-
+        return frequencies.stream().mapToInt(Integer::parseInt).sum();
     }
 
     private static int getFirstFrequencyReachedTwice() {
