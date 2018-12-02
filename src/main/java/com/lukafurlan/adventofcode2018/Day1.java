@@ -9,7 +9,6 @@ import java.util.Set;
 /**
  * @author Luka Furlan <luka.furlan9@gmail.com>
  */
-
 public class Day1 {
 
     private static List<String> frequencies;
