@@ -2,8 +2,9 @@ package com.lukafurlan.adventofcode2018;
 
 import com.lukafurlan.adventofcode2018.helpers.FileReadHelper;
 
-import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 
 /**
  * @author Luka Furlan <luka.furlan9@gmail.com>
@@ -25,7 +26,7 @@ public class Day1 {
 
     private static int getFirstFrequencyReachedTwice() {
 
-        List<Integer> seenFrequencies = new ArrayList<>();
+        Set<Integer> seenFrequencies = new HashSet<>();
 
         int[] frequencies = Day1.frequencies.stream().mapToInt(Integer::parseInt).toArray();
 
