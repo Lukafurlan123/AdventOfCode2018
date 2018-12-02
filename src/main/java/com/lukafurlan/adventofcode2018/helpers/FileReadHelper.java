@@ -16,8 +16,7 @@ public class FileReadHelper {
 
         List<String> list = new ArrayList<>();
 
-        try {
-            Scanner scan = new Scanner(new File(FileReadHelper.class.getClassLoader().getResource(fileName).getFile()));
+        try (Scanner scan = new Scanner(new File(FileReadHelper.class.getClassLoader().getResource(fileName).getFile()))) {
             while(scan.hasNextLine()){
                 list.add(scan.nextLine());
             }
