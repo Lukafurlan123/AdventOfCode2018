@@ -10,9 +10,9 @@ import java.util.*;
 public class Day3 {
 
     private static List<String> entries = new ArrayList<>();
-    private static Set<Claim> claims = new HashSet<>();
+        private static Set<Claim> claims = new HashSet<>();
 
-    public static void main(String[] args) {
+        public static void main(String[] args) {
         entries = FileReadHelper.writeLinesToList("Day3Input.txt");
         System.out.println(processClaims());
         System.out.println(getCleanClaim());
