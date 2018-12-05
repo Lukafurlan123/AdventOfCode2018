@@ -129,7 +129,7 @@ public class Day4 {
                         maxMinute = frequentMinuteTimes[i];
                         maxMinuteIndex = i;
                     }
-                    
+
                 }
 
             }
